@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NVCIO Computer Parts - Products</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">NVCIO Computer Parts</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="nav-link active" href="products.html">Products</a>
+            </li>
+            <li><a class="nav-link" href="#cart">Cart</a></li>
+            <li><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div id="product-list" class="row g-3"></div>
+      </section>
+
+      <section id="cart" class="mb-5">
+        <h2 class="text-center mb-4">Shopping Cart</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle">
+            <thead class="table-brown">
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Subtotal</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+          </table>
+        </div>
+
+        <h4 class="text-end">Total: <span id="cart-total">₱0</span></h4>
+        <div class="text-end">
+          <button id="checkout-btn" class="btn btn-brown">Checkout</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer text-center p-2 mt-4">
+      <p>NVCIO Computer Parts | Cabuyao City, Laguna</p>
+      <p>GROUP 20: Kweenee Jen B. Serrano and Marychrist M. Novicio</p>
+      <p>
+        ITEW1: Final Laboratory Examination | Section 2BSIT-B | Instructor:
+        Jester Emann E. Peñaranda
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
